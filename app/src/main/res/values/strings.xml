@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BlogApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_hint_search">Buscar...</string>
+    <string name="color_indicator_all">color_indicator_all</string>
+    <string name="last_known_location">last_known_location</string>
+    <string name="floating">floating</string>
+    <string name="mode_theme">Tema</string>
+    <string name="message_no_internet">No cuenta con conexión a internet</string>
+    <string name="blog_image">Blog image detail</string>
+    <string name="hint_title">Titulo</string>
+    <string name="help_require">Requerido</string>
+    <string name="hint_author">Autor</string>
+    <string name="hint_date">Fecha de publicación</string>
+    <string name="hint_content">Contenido</string>
+    <string name="help_min_height_valid">Debe ser igual o mayor a 200 caracteres</string>
+    <string name="error_save">Error al guardar</string>
+    <string name="exit_save">Se guardo correctamente</string>
+</resources>

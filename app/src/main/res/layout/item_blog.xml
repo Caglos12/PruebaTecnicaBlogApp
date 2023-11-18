@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBlogItem">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivCharacterImage"
+        android:layout_width="@dimen/common_img_item"
+        android:layout_height="@dimen/common_img_item"
+        android:layout_marginStart="@dimen/common_padding_default"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_web" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/common_padding_default"
+        tools:text="Titulo"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintTop_toTopOf="@id/ivCharacterImage"
+        app:layout_constraintBottom_toBottomOf="@id/ivCharacterImage"
+        app:layout_constraintStart_toEndOf="@id/ivCharacterImage"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

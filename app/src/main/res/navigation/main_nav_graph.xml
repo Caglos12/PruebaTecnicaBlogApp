@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/blogListFragment">
+    <fragment
+        android:id="@+id/blogListFragment"
+        android:name="com.example.blogapp.presentation.list.BlogListFragment"
+        android:label="fragment_blog_list"
+        tools:layout="@layout/fragment_blog_list">
+        <action
+            android:id="@+id/action_blogListFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment"/>
+        <action
+            android:id="@+id/action_blogListFragment_to_blogAddFragment"
+            app:destination="@id/blogAddFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/blogDetailFragment"
+        android:name="com.example.blogapp.presentation.detail.BlogDetailFragment"
+        android:label="fragment_blog_detail"
+        tools:layout="@layout/fragment_blog_detail">
+        <argument
+            android:name="blogId"
+            app:argType="integer"
+            app:nullable="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/blogAddFragment"
+        android:name="com.example.blogapp.presentation.add.BlogAddFragment"
+        android:label="fragment_blog_add"
+        tools:layout="@layout/fragment_blog_add">
+    </fragment>
+</navigation>
