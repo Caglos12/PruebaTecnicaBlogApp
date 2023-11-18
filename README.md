@@ -17,4 +17,4 @@
 
 ## Instrucciones
 
-- En el archivo data/remote/constants/RetrofitConstants cambiar el valor de URL_BASE por nuestra IP local o en su defecto dejar sistemas.pit-sa.com.mx.
+- En el archivo data/remote/constants/RetrofitConstants cambiar el valor de URL_BASE por nuestra IP local o dejar la que tiene por default
